@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <section class="cabeca">
+            <h1>Cadastro de Cliente</h1>
+        </section>
+    </header>
+    <main>
+        <section class="main">
+            <h2>Cadastre-se</h2>
+            <p>Insira seus dados a seguir</p>
+        </section>
+        <section class="main">
+            <form method="post">
+                <label>Nome*</label required>
+                <input type="text">
+                <label>Data de Nascimento</label>
+                <input type="date">
+                <label>Email*</label required>
+                <input type="email">
+                <label>Login*</label required>
+                <input type="text">
+                <label>Senha*</label>
+                <input type="password" required>
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <label>Selecione um ou mais produtos de sua escolha:   </label>
+                
+                <input type="checkbox" id="cEletronicos" name="produtos[]" value="Eletronicos">
+                <label for="cEletronicos">Eletrônicos</label>
+                
+                <input type="checkbox" id="cFisicos" name="produtos[]" value="Físicos">
+                <label for="cFisicos">Físicos</label>
+                
+                <input type="checkbox" id="cOutros" name="produtos[]" value="Outros">
+                <label for="cOutros">Outros</label>
+                </fieldset>
+                
+                <button type="submit">Entrar</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright... 2022</p>
+    </footer>
+</body>
+</html>
